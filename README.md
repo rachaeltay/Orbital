@@ -42,7 +42,7 @@ Level of Achievement: Gemini
 | 17 | Team meeting | 8 Aug 2017 | 10 | 10 | Worked on Milestones |
 
 | Total Hours | Rachael | Thomas |
-| 280| 140 | 140 |
+| 280 | 140 | 140 |
 | - | - | - |
 
 
