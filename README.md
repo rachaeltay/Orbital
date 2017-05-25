@@ -21,7 +21,7 @@ Level of Achievement: Gemini
 
 ## Project Log
 
-| Task | Date | Rachael | Thomas | Remarks |
+| S/N | Task | Date | Rachael | Thomas | Remarks |
 | --- | --- | --- | --- | --- |
 | 1 | Liftoff Day 1 | 8 May 2017 | 8 | 8 | Overview of Mobile App Development & Basic Android App Development |
 | 2 | Liftoff Day 2 | 9 May 2017 | 8 | 8 | Intermediate Android App Development, An introduction to Serverless codes on Windows Azure and Git |
