@@ -21,23 +21,28 @@ Level of Achievement: Gemini
 
 ## Project Log
 
-| Task | Date | Sriram (hrs) | Yew Siang (hrs) | Remarks |
+| Task | Date | Rachael | Thomas | Remarks |
 | --- | --- | --- | --- | --- |
 | 1 | Liftoff Day 1 | 8 May 2017 | 8 | 8 | Overview of Mobile App Development & Basic Android App Development |
 | 2 | Liftoff Day 2 | 9 May 2017 | 8 | 8 | Intermediate Android App Development, An introduction to Serverless codes on Windows Azure and Git |
 | 3 | Team meeting & planning | 16 May 2017 | 10 | 10 | Planning of idea execution for the project and technology required |
-| 4 | Learning of technology used | 17 May 2017 | 20 | 20 | React, JSX, SQL database and Android Dev |
-| 5 | Implementation details and initial project structure | 19 May 2017 | 10 | 10 | Discussion of the specific implementation of features |
-| 6 | Mission Control | 19 May 2017 | 5 | 5 | MeteorJS Workshop |
-| 7 | Mission Control | 10 Jun 2017 | 5 | 5 | Web Security Workshop and Google Workshop on BigQuery |
-| 8 | Programming |  |  |  | Develop database models |
-| 9 | Programming |  |  |  | Develop database models |
-| 10 | Programming |  |  |  | Develop database models |
-| 11 | Programming |  |  |  | Develop different database functions |
-| 12 | Team meeting |  |  |  | Worked on Milestones |
+| 4 | Learning of technology used | 20 May 2017 | 10 | 10 | React, JSX, SQL database and Android Dev |
+| 5 | Learning of technology used | 22 May 2017 | 10 | 10 | React, JSX, SQL database and Android Dev 2 |
+| 6 | Implementation details and initial project structure | 20 May 2017 | 10 | 10 | Discussion of the specific implementation of features |
+| 7 | Mission Control | 19 May 2017 | 5 | 5 | MeteorJS Workshop |
+| 8 | Team meeting & planning | 25 May 2017 | 10 | 10 | Continuation of ideation |
+| 9 | Mission Control | 10 Jun 2017 | 6 | 6 | Web Security Workshop and Google Workshop on BigQuery |
+| 10 | Programming | 29 May 2017 | 10 | 10 | Working on Frontend |
+| 11 | Programming | 5 Jun 2017 | 5 | 5 | Working on UI |
+| 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI 2 |
+| 13 | Programming | 12 Jun 2017 | 10 | 10 | Develop database and filtering |
+| 14 | Programming | 18 Jun 2017 | 10 | 10 | Working on Backend |
+| 15 | Programming | 24 Jun 2017 | 10 | 10 | Working on Backend |
+| 16 | Programming | 26 Jun 2017 | 6 | 6 | Debugging |
+| 17 | Team meeting | 8 Aug 2017 | 10 | 10 | Worked on Milestones |
 
 | Total Hours | Rachael | Thomas |
-| --- | --- | --- |
+| 280| 140 | 140 |
 | - | - | - |
 
 
