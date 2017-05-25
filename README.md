@@ -23,7 +23,7 @@ Level of Achievement: Gemini
 | 2 | Liftoff Day 2 | 9 May 2017 | 8 | 8 | Intermediate Android App Development, An introduction to Serverless codes on Windows Azure and Git |
 | 3 | Team meeting & planning | 16 May 2017 | 10 | 10 | Planning of idea execution for the project and technology required |
 | 4 | Learning of technology used | 17 May 2017 | 20 | 20 | React, JSX, SQL database and Android Dev |
-| 5 | Implementation details and initial project structure | 15/5/2016 | 10 | 10 | Discussion of the specific implementation of features |
+| 5 | Implementation details and initial project structure | 19 May 2017 | 10 | 10 | Discussion of the specific implementation of features |
 | 6 | Mission Control | 19 May 2017 | 5 | 5 | MeteorJS Workshop |
 | 7 | Mission Control | 10 Jun 2017 | 5 | 5 | Web Security Workshop and Google Workshop on BigQuery |
 | 8 | Programming |  |  |  | Develop database models |
