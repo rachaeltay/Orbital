@@ -15,7 +15,7 @@ Enthusiasts looking to get in touch with the latest happenings will now have a o
 - Users will be able to sign up and maintain accounts with the use of Google Firebase
 - Use of Google Maps or other maps API will be the mainstay of the app | to allow geo-mapping of events
 - Events can be filtered at the user's request 
-- Front-end will be built using React and React-Native cos rachael say it's easier than java
+- Front-end will be built using React and React-Native
 
 Level of Achievement: Gemini
 
