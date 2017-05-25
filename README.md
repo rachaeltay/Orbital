@@ -35,11 +35,11 @@ Level of Achievement: Gemini
 | 10 | Programming | 29 May 2017 | 10 | 10 | Working on Frontend |
 | 11 | Programming | 5 Jun 2017 | 5 | 5 | Working on UI |
 | 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI 2 |
-| 13 | Programming | 12 Jun 2017 | 10 | 10 | Develop database and filtering |
-| 14 | Programming | 18 Jun 2017 | 10 | 10 | Working on Backend |
-| 15 | Programming | 24 Jun 2017 | 10 | 10 | Working on Backend |
-| 16 | Programming | 26 Jun 2017 | 6 | 6 | Debugging |
-| 17 | Team meeting | 8 Aug 2017 | 10 | 10 | Worked on Milestones |
+| 13 | Programming | 10 Jun 2017 | 10 | 10 | Develop database and filtering |
+| 14 | Programming | 12 Jun 2017 | 10 | 10 | Working on Backend |
+| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on Backend |
+| 16 | Programming | 18 Jun 2017 | 6 | 6 | Debugging |
+| 17 | Team meeting | 25 Jun 2017 | 10 | 10 | Worked on Milestones |
 
 
 | Total Hours | Rachael | Thomas |
