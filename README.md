@@ -40,10 +40,11 @@ Level of Achievement: Gemini
 | 15 | Programming | 24 Jun 2017 | 10 | 10 | Working on Backend |
 | 16 | Programming | 26 Jun 2017 | 6 | 6 | Debugging |
 | 17 | Team meeting | 8 Aug 2017 | 10 | 10 | Worked on Milestones |
-| --- | --- | --- | --- | --- |
+
 
 | Total Hours | Rachael | Thomas |
+| --- | --- | --- |
 | 280 | 140 | 140 |
-| - | - | - |
+
 
 
