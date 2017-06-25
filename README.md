@@ -12,10 +12,15 @@ Students looking to get in touch with the latest happenings will now have a one-
 
 ## Proposed Features and Technologies 
 ![login.PNG](assets/login.PNG)
+
 -Users can create accounts and log in to manage their events
+
 -Link to social media accounts in the future
+
 -Able to post new events
+
 -Able to save events to their calendar
+
 ![calendar.PNG](assets/calendar.PNG)
 
 Level of Achievement: Gemini
