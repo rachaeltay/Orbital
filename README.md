@@ -11,7 +11,7 @@ A web app designed to allows users to sign up for current events as well as disc
 Students looking to get in touch with the latest happenings will now have a one-stop shop with listings of all events happening. No longer will they need to trawl through multiple websites and look through obscure listings. Users can also send invites via social media platforms to coordinate with other like-minded individuals. Up-and-coming events now have a platform to showcase their offerings and boost their presence.
 
 ## Proposed Features and Technologies 
-![ror.png](assets/ror.png)
+![stack.PNG](assets/stack.PNG)
 
 The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as bcrypt, carrierwave, paginator that are used in the app.
 
