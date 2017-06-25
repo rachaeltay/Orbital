@@ -11,15 +11,18 @@ A web app designed to allows users to sign up for current events as well as disc
 Students looking to get in touch with the latest happenings will now have a one-stop shop with listings of all events happening. No longer will they need to trawl through multiple websites and look through obscure listings. Users can also send invites via social media platforms to coordinate with other like-minded individuals. Up-and-coming events now have a platform to showcase their offerings and boost their presence.
 
 ## Proposed Features and Technologies 
+![ror.png](assets/ror.png)
+The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as bcrypt, carrierwave, paginator that are used in the app.
+
 ![login.PNG](assets/login.PNG)
 
--Users can create accounts and log in to manage their events
-
--Link to social media accounts in the future
+-Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
 
 -Able to post new events
 
 -Able to save events to their calendar
+
+-Link to social media accounts, mailer functions and linking to google calendar in the future
 
 ![calendar.PNG](assets/calendar.PNG)
 
