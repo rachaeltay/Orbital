@@ -12,6 +12,7 @@ Students looking to get in touch with the latest happenings will now have a one-
 
 ## Proposed Features and Technologies 
 ![ror.png](assets/ror.png)
+
 The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as bcrypt, carrierwave, paginator that are used in the app.
 
 ![login.PNG](assets/login.PNG)
