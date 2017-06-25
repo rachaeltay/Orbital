@@ -5,18 +5,18 @@ Web app to allow users to view and create events, and save them to a planner
 
 A web app designed to allows users to sign up for current events as well as discover upcoming events . Users can also host their own events and invite others via social media. The app updates with real time to ensure that all events are updated.
 
-![homepage.PNG](assets/homepage.PNG)
+![homepage.png](assets/homepage.png)
 
 ## Problem motivation
 Students looking to get in touch with the latest happenings will now have a one-stop shop with listings of all events happening. No longer will they need to trawl through multiple websites and look through obscure listings. Users can also send invites via social media platforms to coordinate with other like-minded individuals. Up-and-coming events now have a platform to showcase their offerings and boost their presence.
 
 ## Proposed Features and Technologies 
-![login.PNG](assets/homepage.PNG)
+![login.PNG](assets/login.PNG)
 -Users can create accounts and log in to manage their events
 -Link to social media accounts in the future
 -Able to post new events
 -Able to save events to their calendar
-![calendar.PNG](assets/homepage.PNG)
+![calendar.PNG](assets/calendar.PNG)
 
 Level of Achievement: Gemini
 
