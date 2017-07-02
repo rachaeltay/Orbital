@@ -42,12 +42,12 @@ Level of Achievement: Gemini
 | 7 | Mission Control | 19 May 2017 | 5 | 5 | MeteorJS Workshop |
 | 8 | Team meeting & planning | 25 May 2017 | 10 | 10 | Continuation of ideation |
 | 9 | Mission Control | 10 Jun 2017 | 6 | 6 | Web Security Workshop and Google Workshop on BigQuery |
-| 10 | Programming | 29 May 2017 | 10 | 10 | Working on Frontend |
-| 11 | Programming | 5 Jun 2017 | 5 | 5 | Working on UI |
-| 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI |
-| 13 | Programming | 10 Jun 2017 | 10 | 10 | Develop database and filtering |
-| 14 | Programming | 12 Jun 2017 | 10 | 10 | Working on Backend |
-| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on Backend |
+| 10 | Programming | 29 May 2017 | 10 | 10 | Working on Frontend, design of UI UX |
+| 11 | Programming | 5 Jun 2017 | 5 | 5 | Working on UI, implementation of UI UX |
+| 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI, implementation of UI UX |
+| 13 | Programming | 10 Jun 2017 | 10 | 10 | Develop database and filtering, designing schemas and choosing database |
+| 14 | Programming | 12 Jun 2017 | 10 | 10 | Working on Backend, implementation of database |
+| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on Backend, implementation of database |
 | 16 | Programming | 18 Jun 2017 | 6 | 6 | Debugging |
 | 17 | Team meeting | 25 Jun 2017 | 10 | 10 | Worked on Milestones |
 
