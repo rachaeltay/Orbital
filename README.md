@@ -51,7 +51,7 @@ Level of Achievement: Gemini
 | 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI, implementation of UI UX |
 | 13 | Programming | 10 Jun 2017 | 10 | 10 | Develop database and filtering, designing schemas and choosing database |
 | 14 | Programming | 12 Jun 2017 | 10 | 10 | Working on Backend, implementation of database |
-| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working finalising features |
+| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on finalising the features |
 | 16 | Programming | 18 Jun 2017 | 6 | 6 | Debugging |
 | 17 | Team meeting | 25 Jun 2017 | 10 | 10 | Worked on Milestones |
 
