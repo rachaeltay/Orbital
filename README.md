@@ -60,7 +60,3 @@ Level of Achievement: Gemini
 | Total Hours | Rachael | Thomas |
 | --- | --- | --- |
 | 280 | 140 | 140 |
-
-
-
->>>>>>> 4952c25e5156c43728df02d92c4a52b7bf1096ee
