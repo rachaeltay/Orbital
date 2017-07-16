@@ -1,0 +1,32 @@
+<head>
+  <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-7" style="border-radius:10px; border:none;">
+  <p>
+    <%= month_calendar do |date| %>
+      <%= date.day %>
+      <br>
+      <% @posts.each do |po| %>
+      <div style="text-align:center;">
+        <% if po.start_time <= date && date <= po.end_time %>
+          <%= po.title %>
+          <br>
+        <% end %>
+      </div>
+      <% end %>
+    <% end %>
+  </p>
+  </div>
+</div>
+  
+  <div class="col-sm-4 pull-right" style="padding-top: 55px;">
+    <% if @posts != nil %>
+      <%= render 'list' %>
+    <% end %>
+  </div>
+
+</body>

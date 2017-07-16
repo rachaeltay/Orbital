@@ -1,0 +1,25 @@
+<head>
+  <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+
+<p id="notice"><%= notice %></p>
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<h1>Posts</h1>
+<br>
+
+<div class="thumbnail">
+  <% @posts.each do |post| %>
+  <br>
+    <%= image_tag post.picture_url.to_s, class:"img-thumbnail" %>
+    <br>
+    <div class="caption" style="background: rgba(255, 255, 255, 0.7); font-size:30px;">
+      <div style="padding-left: 5%;">
+      <a href= '<%= post.signup_link %>'>Signup</a> &nbsp; or &nbsp; 
+      <%= link_to "View More", post, method: :get %>
+      </div>
+    </div>
+  <% end %>
+  
+<%= image_tag("polaroid.png") %>
+</div>

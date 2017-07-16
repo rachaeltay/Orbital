@@ -1,0 +1,39 @@
+
+<head>
+  <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+
+<body>
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+<p id="notice"><%= notice %></p>  
+<div class="thumbnail">
+  <%= image_tag @post.picture_url.to_s  %>
+  <br>
+  <div class="caption">
+    <strong style="font-size:3.5em; font-family: 'Anton', sans-serif; "><%= @post.title %></strong>
+    <br>
+    <div style="text-align:left; padding: 10px 5px 10px 5px;"><%= @post.description %></div>
+    <br>
+    <div>
+      <a href= '<%= @post.signup_link %>'>Signup Here!</a><br>
+      <% if !@post.contact_number == 0 %>
+      <div>Call for more details! <%= @post.contact_number %></div>
+      <% end %>
+    </div>
+    <br>
+    <strong style="font-family: 'Lato', sans-serif;"><%= @post.host %></strong>
+  </div>
+<%# if user_signed_in? && @post.user_id == current_user.id %>
+<br>
+  <%= button_to "Edit Post!", edit_post_path, class:"btn btn-info", method: :get %>
+<%# end %>
+<br>
+<% if user_signed_in? %>
+  <%= button_to "Add to Calendar!", add_post_path, class:"btn btn-primary" %>
+<% end %>
+<div class="fb-comments" data-href="https://orbital-soraares.c9users.io/posts" data-width="700" data-numposts="10"></div>
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+  <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
+</div>
+</body>
