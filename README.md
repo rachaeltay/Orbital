@@ -13,17 +13,21 @@ Students looking to get in touch with the latest happenings will now have a one-
 ## Proposed Features and Technologies 
 ![stack.PNG](assets/stack.PNG)
 
-The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as bcrypt, carrierwave, paginator that are used in the app.
+The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as devise, carrierwave, paginator that are used in the app.
+
+We used Facebook omniauth, graph API and Koala to enable log in to facebook on our web application and users to know if any of their friends are also going for the event.
 
 ![login.PNG](assets/login.PNG)
 
 -Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
 
--Able to post new events
+-Able to post and edit new events
 
 -Able to save events to their calendar
 
--Link to social media accounts, mailer functions and linking to google calendar in the future
+-Link / log in to social media accounts, Facebook, and able to access users data along with friends' list
+
+-Able to see friends going to events on and join them!
 
 ![calendar.PNG](assets/calendar.PNG)
 
@@ -47,7 +51,7 @@ Level of Achievement: Gemini
 | 12 | Programming | 7 Jun 2017 | 7 | 7 | Working on UI, implementation of UI UX |
 | 13 | Programming | 10 Jun 2017 | 10 | 10 | Develop database and filtering, designing schemas and choosing database |
 | 14 | Programming | 12 Jun 2017 | 10 | 10 | Working on Backend, implementation of database |
-| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on Backend, implementation of database |
+| 15 | Programming | 15 Jun 2017 | 10 | 10 | Working finalising features |
 | 16 | Programming | 18 Jun 2017 | 6 | 6 | Debugging |
 | 17 | Team meeting | 25 Jun 2017 | 10 | 10 | Worked on Milestones |
 
