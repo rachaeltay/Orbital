@@ -6,7 +6,11 @@
 <div class="col-sm-2"></div>
 <div class="col-sm-8">
 <h1>Posts</h1>
-<br>
+
+<%= form_tag posts_path, method: :get %>
+  <%= select_tag :tag, options_for_select(["All", "Sports", "Arts", "Community", "Education", "Tech"]), { class: "select", :id => "soflow" } %>
+<%= submit_tag "Filter", class: "btn btn-default" %>
+
 
 <div class="thumbnail">
   <% @posts.each do |post| %>

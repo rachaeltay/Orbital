@@ -12,8 +12,8 @@ class Users::SessionsController < Devise::SessionsController
     super
     if env["omniauth.auth"]
       user = User.from_omniauth(env["omniauth.auth"])
-      auth_hash = request.env['omniauth.auth']
-      render :text => auth_hash.inspect
+      # auth_hash = request.env['omniauth.auth']
+      # render :text => auth_hash.inspect
     end
   end
 

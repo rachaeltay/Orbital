@@ -6,7 +6,6 @@
 <body>
 <div class="col-sm-2"></div>
 <div class="col-sm-8">
-<p id="notice"><%= notice %></p>  
 <div class="thumbnail">
   <%= image_tag @post.picture_url.to_s  %>
   <br>
@@ -17,23 +16,60 @@
     <br>
     <div>
       <a href= '<%= @post.signup_link %>'>Signup Here!</a><br>
-      <% if !@post.contact_number == 0 %>
-      <div>Call for more details! <%= @post.contact_number %></div>
+      <% if @post.contact_number.length > 0 %>
+        <div>Have any questions? For more details contact us @ <%= @post.contact_number %>!</div>
       <% end %>
     </div>
     <br>
-    <strong style="font-family: 'Lato', sans-serif;"><%= @post.host %></strong>
+    <strong style="font-family: 'Lato', sans-serif;"><%= @post.host %>
+    </strong>
+    <br>
+    <span class="label label-info"><%= @post.tag %></span>
   </div>
-<%# if user_signed_in? && @post.user_id == current_user.id %>
 <br>
+<% if user_signed_in? && @post.user_id == current_user.id %>
   <%= button_to "Edit Post!", edit_post_path, class:"btn btn-info", method: :get %>
-<%# end %>
+<% end %>
 <br>
 <% if user_signed_in? %>
   <%= button_to "Add to Calendar!", add_post_path, class:"btn btn-primary" %>
 <% end %>
+<% if @friends && @friends.length > 0 %>
+  Friends that are also going to this event:
+  <% @friends.take(3).each do |friend| %>
+    <%= friend["name"] %><%= image_tag friend["picture"]["data"]["url"] %>
+  <% end %>
+<% end %>
+    
 <div class="fb-comments" data-href="https://orbital-soraares.c9users.io/posts" data-width="700" data-numposts="10"></div>
-<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true">
-  <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
-</div>
+<!--<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true">-->
+<!--  <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>-->
+<!--</div>-->
+
+<br>
+
+<%= social_share_button_tag(@post.title, :allow_sites => %w(twitter facebook google_plus tumblr pinterest email linkedin wechat reddit hacker_news telegram)) %>
+
 </body>
+
+<!--<div class="col-sm-3">-->
+<!--  <table>-->
+<!--    <thead>-->
+<!--      <tr>-->
+<!--        <th>Event Title</th>-->
+<!--        <th colspan="3"></th>-->
+<!--      </tr>-->
+<!--    </thead>-->
+  
+<!--    <tbody>-->
+<!--      <%# @posts.each do |po| %>-->
+<!--        <tr>-->
+<!--          <td><%#= po.title %></td>-->
+<!--          <td><%#= link_to 'Show', po, class:"btn btn-primary" %></td>-->
+<!--          <td><%#= link_to 'Delete', remove_post_path(po.id), method: :post, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>-->
+<!--        </tr>-->
+<!--      <%# end %>-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--</div>-->
+

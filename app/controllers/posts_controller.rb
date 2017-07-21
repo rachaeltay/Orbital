@@ -5,13 +5,34 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.order(created_at: :desc)
+    # Post.all.each do |p|
+    #   if p.end_time < Date.today
+    #     p.destroy
+    #   end
+    # end
+    
+    if params[:tag] == "All"
+      @posts = Post.all.order(created_at: :desc)
+    else
+      @posts = Post.where(tag: params[:tag]).order(created_at: :desc)
+    end
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
     @uploader = PictureUploader.new
+    if current_user.oauth_token
+      @friends = []
+      if current_user.friendslist.length > 0
+        current_user.friendslist.each do |friend|
+          user = User.find_by(uid: friend["id"])
+          if Signup.find_by(user_id: user.id, post_id: @post.id)
+            @friends << friend
+          end
+        end  
+      end
+    end
   end
 
   # GET /posts/new
@@ -22,7 +43,6 @@ class PostsController < ApplicationController
         format.json { head :no_content }
       end
     end
-    
     @post = Post.new
   end
 
@@ -89,13 +109,15 @@ class PostsController < ApplicationController
     if signup != nil
       respond_to do |format|
         format.html { redirect_to set_post and return}
+        flash[:notice] = 'Event already in calendar!'
       end
     end
     
     @signup = Signup.new(user_id: current_user.id, post_id: set_post.id)
     @signup.save
     respond_to do |format|
-      format.html { redirect_to @post, notice: 'Added to calendar!' }
+      format.html { redirect_to @post }
+      flash[:success] = 'Added to calendar!'
     end
   end
   
@@ -117,6 +139,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :description, :host, :start_time, :end_time, :picture, :user_id, :contact_number, :signup_link)
+      params.require(:post).permit(:title, :description, :host, :start_time, :end_time, :picture, :user_id, :contact_number, :signup_link, :tag)
     end
 end
