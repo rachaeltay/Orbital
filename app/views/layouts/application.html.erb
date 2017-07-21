@@ -31,10 +31,14 @@
         <a><%= link_to "Vento", posts_path, method: :get, class:"navbar-brand" %></a>
       </div>
       <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to "Create Post", new_post_path, method: :get %></li>
+        <li>
+          <%= link_to new_post_path, method: :get do %>
+          <%= image_tag "edit.png", size: "22" %>&nbsp; Post
+          <% end %>
+        </li>
         <li style="padding: 0 0 0 0;">
           <%= link_to current_user,  method: :get do %>
-          <%= image_tag "calendar.png", size: "20" %>
+          <%= image_tag "calendar (2).png", size: "22" %>&nbsp; Calendar
           <% end %>
         </li>
       </ul>

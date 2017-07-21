@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     #   end
     # end
     
-    if params[:tag] == "All"
+    if params[:tag] == "All" || params[:tag].nil?
       @posts = Post.all.order(created_at: :desc)
     else
       @posts = Post.where(tag: params[:tag]).order(created_at: :desc)
