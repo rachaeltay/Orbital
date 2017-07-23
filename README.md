@@ -6,7 +6,7 @@ Web app to allow users to view and create events, and save them to a planner
 
 A web app designed to allows users to sign up for current events as well as discover upcoming events. Users can also host their own events and invite others via social media. The app updates with real time to ensure that all events are updated.
 
-![homepage.png](assets/homepage.png)
+![mainpage.png](assets/mainpage.png)
 
 ## Problem motivation
 Students looking to get in touch with the latest happenings will now have a one-stop shop with listings of all events happening. No longer will they need to trawl through multiple websites and look through obscure listings. Users can also send invites via social media platforms to coordinate with other like-minded individuals. Up-and-coming events now have a platform to showcase their offerings and boost their presence.
@@ -32,9 +32,9 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 -Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
+![postsharing.png](assets/postsharing.png)
+
 -Able to see friends going to events on and join them!
-
-
 
 ![calendar.PNG](assets/calendar.PNG)
 
