@@ -68,12 +68,6 @@ gem 'devise'
 
 gem 'fb_graph2'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-  gem 'pry'
-end
-
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -82,3 +76,18 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem "capybara"
+  gem 'factory_girl_rails', '~> 4.5.0'
+  
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'pry'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 3.0', require: false
+  gem 'database_cleaner', '~> 1.5'
+  gem 'faker', '~> 1.6.1'
+end
