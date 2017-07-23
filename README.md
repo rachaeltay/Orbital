@@ -34,6 +34,8 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 -Able to see friends going to events on and join them!
 
+
+
 ![calendar.PNG](assets/calendar.PNG)
 
 Level of Achievement: Gemini
