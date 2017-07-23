@@ -28,7 +28,7 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 ![social-media.png](assets/social-media.png)
 
--Link / log in to social media accounts, Facebook, and able to access users data along with friends' list
+-Link / log in to Facebook, and able to access users data along with friends' list
 
 -Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
