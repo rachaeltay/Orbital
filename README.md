@@ -18,7 +18,7 @@ The web app will be designed and built using Ruby on Rails, to take advantage of
 
 We used Facebook omniauth, graph API and Koala to enable log in to facebook on our web application and users to know if any of their friends are also going for the event.
 
-![login.PNG](assets/login.PNG)
+![loginpage.png](assets/loginpage.png)
 
 -Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
 
