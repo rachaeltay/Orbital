@@ -20,21 +20,21 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 ![loginpage.png](assets/loginpage.png)
 
--Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
+- Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
 
--Able to post and edit new events
+- Able to post and edit new events
 
--Able to save events to their calendar
+- Able to save events to their calendar
 
 ![social-media4.png](assets/social-media4.png)
 
--Link / log in to Facebook, and able to access users data along with friends' list
+- Link / log in to Facebook, and able to access users data along with friends' list
 
--Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
+- Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
 ![postsharing.png](assets/postsharing.png)
 
--Able to see friends going to events on and join them!
+- Able to see friends going to events on and join them!
 
 ![calendar.PNG](assets/calendar.PNG)
 
