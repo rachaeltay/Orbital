@@ -4,7 +4,7 @@
 ## Project Scope
 Web app to allow users to view and create events, and save them to a planner
 
-A web app designed to allows users to sign up for current events as well as discover upcoming events . Users can also host their own events and invite others via social media. The app updates with real time to ensure that all events are updated.
+A web app designed to allows users to sign up for current events as well as discover upcoming events. Users can also host their own events and invite others via social media. The app updates with real time to ensure that all events are updated.
 
 ![homepage.png](assets/homepage.png)
 
@@ -26,7 +26,11 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 -Able to save events to their calendar
 
+![social-media.png](assets/social-media.png)
+
 -Link / log in to social media accounts, Facebook, and able to access users data along with friends' list
+
+-Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
 -Able to see friends going to events on and join them!
 
