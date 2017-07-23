@@ -26,7 +26,7 @@ We used Facebook omniauth, graph API and Koala to enable log in to facebook on o
 
 -Able to save events to their calendar
 
-![social-media3.png](assets/social-media3.png)
+![social-media4.png](assets/social-media4.png)
 
 -Link / log in to Facebook, and able to access users data along with friends' list
 
