@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
 # File.open(File.join(Rails.root, 'icare.jpg'))
 
 # Post.create(title: 'NUS i.CARE Seeks Like-minded Individuals', 
@@ -34,7 +26,7 @@
 #   user_id: 16,
 #   signup_link: 'https://mysurvey.nus.edu.sg/EFM/se/54A238577C7ED011',
 #   contact_number: 91234567,
-#   tag: "Tech",
+#   tag: "Community",
 #   picture: File.open("#{Rails.root}/app/assets/images/icare.jpg"))
 # post1.picture = Pathname.new("./app/assets/images/icare.jpg").open
-# post1.save!
+# post1.save!x`
