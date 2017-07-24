@@ -89,7 +89,7 @@
   
   <div class="field" style="padding-bottom:10px;">
     <%= f.label :tag %><br>
-    <%= select_tag :tag, options_for_select(["Sports", "Arts", "Community", "Education", "Tech"]), { class: "select", :id => "soflow" } %>
+    <%= f.select :tag, options_for_select(["Sports", "Arts", "Community", "Education", "Tech"]), { class: "select", :id => "soflow" } %>
   </div>
   
   <div class="field" style="padding-bottom:10px;">

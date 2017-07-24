@@ -82,6 +82,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'pg', '~> 0.20.0'
   gem "capybara"
   gem 'factory_girl_rails', '~> 4.5.0'
   

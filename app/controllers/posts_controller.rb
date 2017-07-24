@@ -5,11 +5,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    # Post.all.each do |p|
-    #   if p.end_time < Date.today
-    #     p.destroy
-    #   end
-    # end
+    Post.all.each do |p|
+      if p.end_time < Date.today
+        p.destroy
+      end
+    end
     
     if params[:tag] == "All" || params[:tag].nil?
       @posts = Post.all.order(created_at: :desc)
