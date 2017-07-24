@@ -61,8 +61,12 @@ Level of Achievement: Gemini
 | 15 | Programming | 15 Jun 2017 | 10 | 10 | Working on finalising the features |
 | 16 | Programming | 18 Jun 2017 | 6 | 6 | Debugging |
 | 17 | Team meeting | 25 Jun 2017 | 10 | 10 | Worked on Milestones |
+| 18 | Team meeting | 2 Jul 2017 | 10 | 10 | Facebook login |
+| 19 | Team meeting | 9 Jul 2017 | 10 | 10 | Tagging and filtering |
+| 20 | Team meeting | 16 Jul 2017 | 10 | 10 | Debugging |
+| 21 | Team meeting | 23 Jul 2017 | 10 | 10 | Worked on Milestones |
 
 
 | Total Hours | Rachael | Thomas |
 | --- | --- | --- |
-| 280 | 140 | 140 |
+| 370 | 185 | 185 |
