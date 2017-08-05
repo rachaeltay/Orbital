@@ -43,7 +43,8 @@
           <p><%= image_tag friend["picture"]["data"]["url"] %></p>
         <% end %>
       <% end %>
-      <div class="fb-comments" data-href="https://orbital-soraares.c9users.io/posts" data-width="700" data-numposts=<%= @post.id %> style="background:white;"></div>
+      <!--<div class="fb-comments" data-href="https://orbital-soraares.c9users.io/posts" data-width="700" data-numposts="5" style="background:white;" data-href="https://orbital-soraares.c9users.io/posts/27"></div>-->
+      <div class="fb-comments" data-href=<%= @url %> data-numposts="5" style="background:white;"></div>
       <br><br>
       <%= social_share_button_tag(@post.title, :allow_sites => %w(twitter facebook google_plus tumblr pinterest email linkedin wechat reddit hacker_news telegram)) %>
       <br>

@@ -1,5 +1,5 @@
 <head>
-  <title> Create Post</title>
+  <title>Create Post</title>
 </head>
 
 <body>
@@ -45,8 +45,8 @@
   
   <div class="field" style="padding-bottom:10px;">
     
-    <%= f.label :"Start Date" %><br>
-    <%= f.input :start_time, input_html: { class: "daterange" }, as: :string, class:"starttimetable" %>
+    <%= f.label "Start Date" %><br>
+    <%= f.input :start_time, input_html: { class: "daterange" }, as: :string, class:"starttimetable", label: false %>
     <script type="text/javascript">
     $(document).ready(function() {
       $('input[class="daterange"]').daterangepicker({
@@ -67,8 +67,8 @@
   
   <div class="field" style="padding-bottom:10px;">
     
-    <%= f.label :"End Date" %><br>
-    <%= f.input :end_time, input_html: { class: "daterange" }, as: :string %>
+    <%= f.label :"End Date" %> &nbsp;
+    <%= f.input :end_time, input_html: { class: "daterange" }, as: :string, label: false %>
     <script type="text/javascript">
     $(document).ready(function() {
       $('input[class="daterange"]').daterangepicker({
@@ -84,7 +84,6 @@
         });
     });
     </script>
-    
   </div>
   
   <div class="field" style="padding-bottom:10px;">
@@ -103,8 +102,8 @@
   
   <br>
   
-  <div class="actions">
-    <%= f.submit class:"btn btn-info"%>
+  <div class="actions" style="text-align:center;">
+    <%= f.submit class:"darkbluebutton"%>
   </div>
   
 <% end %>

@@ -21,6 +21,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @url = "https://orbital-soraares.c9users.io/posts/#{@post.id}"
     @uploader = PictureUploader.new
     if current_user.oauth_token
       @friends = []

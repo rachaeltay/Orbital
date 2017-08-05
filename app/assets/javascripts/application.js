@@ -17,7 +17,7 @@
 //= require moment
 //= require daterangepicker
 //= require social-share-button
-
+//= require slick-carousel
 
 $(document).ready(function () {
 if (window.location.href.indexOf('#_=_') > 0) {

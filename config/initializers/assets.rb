@@ -15,3 +15,15 @@ Rails.application.config.assets.precompile += %w( posts.css )
 Rails.application.config.assets.precompile += %w( sessions.css )
 
 Rails.application.config.assets.precompile += %w( calendar.css )
+
+Rails.application.config.assets.precompile += %w( mincalendar.css )
+
+Rails.application.config.assets.precompile += %w( slick-theme.css )
+
+Rails.application.config.assets.precompile += %w( slick.min.js )
+
+Rails.application.config.assets.precompile += %w( slick.js )
+
+Rails.application.config.assets.precompile += %w( slick.css )
+
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/

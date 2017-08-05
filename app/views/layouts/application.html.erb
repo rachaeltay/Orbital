@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
   
 <div id="fb-root"></div>
@@ -13,7 +14,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=487673968237355";
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -33,12 +34,12 @@
       <ul class="nav navbar-nav navbar-left">
         <li>
           <%= link_to new_post_path, method: :get do %>
-          <%= image_tag "edit.png", size: "20" %>
+          <%= image_tag "pencil-with-rubber.png", size: "20" %>
           <% end %>
         </li>
         <li style="padding: 0 0 0 0;">
           <%= link_to current_user,  method: :get do %>
-          <%= image_tag "calendar.png", size: "20" %>
+          <%= image_tag "small-calendar.png", size: "20" %>
           <% end %>
         </li>
       </ul>
@@ -46,7 +47,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to destroy_user_session_path, method: :delete do %>
-          <%= image_tag "power-button.png", size: "20" %>&nbsp; Logout
+          <%#= image_tag "user-avatar.png", size: "20" %>
+          <%= image_tag "login (1).png", size: "20" %>
+          <%#  = image_tag "power-button.png", size: "20" %>&nbsp; Logout
           <% end %>
         </li>
       </ul>
@@ -62,7 +65,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <%= link_to new_user_session_path do %>
-            <%= image_tag "login.png", size: "20" %>&nbsp; Login
+            <%= image_tag "login (2).png", size: "20" %>&nbsp; Login
           <% end %> 
         </li>
       </ul>

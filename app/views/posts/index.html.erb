@@ -1,29 +1,72 @@
-<head>
-  <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
-</head>
+<%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag    'slick', media: 'all', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag    'slick-theme', media: 'all', 'data-turbolinks-track' => true %>
 
-<p id="notice"><%= notice %></p>
-<div class="col-sm-2"></div>
-<div class="col-sm-8">
-<h1>Posts</h1>
-
-<%= form_tag posts_path, method: :get %>
-  <%= select_tag :tag, options_for_select(["All", "Sports", "Arts", "Community", "Education", "Tech"]), { class: "select", :id => "soflow" } %>
-<%= submit_tag "Filter", class: "btn btn-default" %>
-
-
-<div class="thumbnail">
-  <% @posts.each do |post| %>
-  <br>
-    <%= image_tag post.picture_url.to_s, class:"img-thumbnail" %>
-    <br>
-    <div class="caption" style="background: rgba(255, 255, 255, 0.7); font-size:30px;">
-      <div style="padding-left: 5%;">
-      <a href= '<%= post.signup_link %>'>Signup</a> &nbsp; or &nbsp; 
-      <%= link_to "View More", post, method: :get %>
+<body>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!--<script type="text/javascript" src="slick/slick.min.js"></script>-->
+  
+  <p id="notice"><%= notice %></p>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+  <h1>Posts</h1>
+  <%= form_tag posts_path, method: :get %>
+    <%= select_tag :tag, options_for_select(["All", "Sports", "Arts", "Community", "Education", "Tech"]), { class: "styled-select slate" } %>
+  <%= submit_tag "Filter", class: "greybutton" %>
+  
+  <%= javascript_include_tag 'slick.min' %>
+  <%= javascript_include_tag 'slick' %>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.scroller').slick({
+        // nextArrow: '<i class="glyphicon glyphicon-chevron-right"></i>',
+        // prevArrow: '<i class="glyphicon glyphicon-chevron-left"></i>',
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  
+  <div class="scroller" style='padding-bottom: 5%;'>
+    <% @posts.each do |post| %>
+    <div>
+      <br>
+      <%= image_tag post.picture_url.to_s, class:"img-thumbnail" %>
+      <div class="caption" style="background: rgba(255, 255, 255, 0.7);">
+        <div style="text-align:center; font-size:1.5em; opacity:0.7; background-color: #F5F5F5;">
+        <a href= '<%= post.signup_link %>'>Signup</a> &nbsp; or &nbsp; 
+        <%= link_to "View More", post, method: :get %>
+        </div>
       </div>
     </div>
-  <% end %>
+    <% end %>
+  </div>
   
-<%= image_tag("polaroid.png") %>
-</div>
+  <div style="text-align:center;">
+  <%= image_tag "polaroid.png", size: "200" %>
+  </div>
+  
+</body>
