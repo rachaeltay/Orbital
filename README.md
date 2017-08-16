@@ -6,7 +6,7 @@ Web app to allow users to view and create events, and save them to a planner
 
 A web app designed to allows users to sign up for current events as well as discover upcoming events. Users can also host their own events and invite others via social media. The app updates with real time to ensure that all events are updated.
 
-![mainpage.png](assets/mainpage.png)
+![homepage.png](assets/homepage.png)
 
 ## Problem motivation
 Students looking to get in touch with the latest happenings will now have a one-stop shop with listings of all events happening. No longer will they need to trawl through multiple websites and look through obscure listings. Users can also send invites via social media platforms to coordinate with other like-minded individuals. Up-and-coming events now have a platform to showcase their offerings and boost their presence.
@@ -22,7 +22,7 @@ To allow users to upload posters for their events, we utilized Carrierwave to cr
 
 As mentioned previously, we have used Slick, along with other JavaScript plugins/gems such as Momentjs, Bootstrap and Simple Calendar, to improve our UI/UX from a basic html page. 
 
-![loginpage.png](assets/loginpage.png)
+![login.png](assets/login.png)
 
 - Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
 
@@ -40,7 +40,7 @@ As mentioned previously, we have used Slick, along with other JavaScript plugins
 
 - Able to see friends going to events on and join them!
 
-![calendar.PNG](assets/calendar.PNG)
+![calendar.png](assets/calendar.png)
 
 Level of Achievement: Gemini
 
