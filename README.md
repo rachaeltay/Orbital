@@ -36,7 +36,7 @@ As mentioned previously, we have used Slick, along with other JavaScript plugins
 
 - Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
-![postsharing.png](assets/postsharing.png)
+![comment.png](assets/comment.png)
 
 - Able to see friends going to events on and join them!
 
