@@ -13,5 +13,6 @@ class Post < ActiveRecord::Base
   
   belongs_to :user
   has_many :signups
+  has_many :updates
   
 end

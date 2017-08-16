@@ -1,48 +1,15 @@
-
-<head>
-  <%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
-</head>
+<%= stylesheet_link_tag    'posts', media: 'all', 'data-turbolinks-track' => true %>
 
 <body>
-<div class="col-sm-2"></div>
-  <div class="col-sm-8">
-    <div class="thumbnail">
+  <div class="col-sm-7" style="padding-left: 40px; text-align: center;">
       <%= image_tag @post.picture_url.to_s  %>
       <br>
-      <div class="caption">
-        <strong style="font-size:3.5em; font-family: 'Anton', sans-serif; "><%= @post.title %></strong>
-        <br>
-        <div style="text-align:left; padding: 10px 5px 10px 5px;"><%= @post.description %></div>
-        <br>
-        <div>
-          <a href= '<%= @post.signup_link %>'>Signup Here!</a><br>
-          <% if @post.contact_number.length > 0 %>
-            <div>Have any questions? For more details contact us @ <%= @post.contact_number %>!</div>
-          <% end %>
-        </div>
-        <br>
-        <strong style="font-family: 'Lato', sans-serif;"><%= @post.host %>
-        </strong>
-        <br>
-        <span class="label label-info"><%= @post.tag %></span>
-      </div>
-      <br>
       <% if user_signed_in? && @post.user_id == current_user.id %>
-        <%= button_to "Edit Post!", edit_post_path, class:"btn btn-info", method: :get %>
+      <br>
+        <%= button_to "Edit Post!", edit_post_path, class:"btn btn-info", method: :get %> &nbsp;
+        <%= button_to "Create an Update", new_update_path(@post), class:"btn btn-success", method: :get %>
       <% end %>
       <br>
-      <% if user_signed_in? %>
-        <%= button_to "Add to Calendar!", add_post_path, class:"btn btn-primary" %>
-        <br>
-      <% end %>
-      <% if @friends && @friends.length > 0 %>
-        <div style="color:white; text-align:center; padding-left:0px;">Friends that are also going to this event:</div>
-        <div style="color:white; text-align:center; padding-left:0px;">
-        <% @friends.take(3).each do |friend| %>
-          <p><%= friend["name"] %></p>
-          <p><%= image_tag friend["picture"]["data"]["url"] %></p>
-        <% end %>
-      <% end %>
       <!--<div class="fb-comments" data-href="https://orbital-soraares.c9users.io/posts" data-width="700" data-numposts="5" style="background:white;" data-href="https://orbital-soraares.c9users.io/posts/27"></div>-->
       <div class="fb-comments" data-href=<%= @url %> data-numposts="5" style="background:white;"></div>
       <br><br>
@@ -50,6 +17,60 @@
       <br>
     </div>
   </div>
+  </div>
+  
+  <div class="col-sm-4">
+    <strong style="font-size:3.5em; font-family: 'Anton', sans-serif; "><%= @post.title %></strong>
+    
+    <p style="font-weight: 300;">
+      by <%= @post.host %>
+    </p>
+    
+    <p>
+      <span class="label label-info"><%= @post.tag %></span>
+    </p>
+    
+    <p>
+    <strong> Date</strong>
+    <br>
+    <%= @post.start_time.strftime("%d %B %Y") %>  
+    <% if !@post.start_time.eql? @post.end_time %>
+    &nbsp; to  &nbsp; <%= @post.end_time.strftime("%d %B %Y") %>
+    <% end %>
+    </p>
+    
+    <p>
+      <% if user_signed_in? %>
+        <%= button_to "Add to Calendar!", add_post_path, class:"btn btn-primary btn-sm" %>
+        <br>
+      <% end %>
+    </p>
+    
+    <p>
+    <strong> Description</strong>
+    <br>
+    <%= @post.description %>
+    <br>
+    <% if @post.contact_number.length > 0 %>
+        <div>Have any questions? For more details contact us @ <%= @post.contact_number %>!</div>
+      <% end %>
+    </p>
+    
+    <p style="font-weight: bold; font-size: 2em; text-align: center;">
+      <a href= '<%= @post.signup_link %>'>Signup Here!</a><br>
+    </p>
+    
+    <p>
+      <% if @friends && @friends.length > 0 %>
+      <strong>Friends going for the event</strong>
+        <% @friends.take(3).each do |friend| %>
+          <p><%= friend["name"] %></p>
+          <p><%= image_tag friend["picture"]["data"]["url"] %></p>
+        <% end %>
+      <% end %>
+    </p>
+    
+  </div>   
 </body>
 
 <!--<div class="col-sm-3">-->

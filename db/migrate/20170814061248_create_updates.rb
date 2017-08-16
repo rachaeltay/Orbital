@@ -1,0 +1,10 @@
+class CreateUpdates < ActiveRecord::Migration
+  def change
+    create_table :updates do |t|
+      t.integer :post_id
+      t.string :body
+
+      t.timestamps null: false
+    end
+  end
+end
