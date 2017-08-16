@@ -14,9 +14,13 @@ Students looking to get in touch with the latest happenings will now have a one-
 ## Proposed Features and Technologies 
 ![stack.PNG](assets/stack.PNG)
 
-The web app will be designed and built using Ruby on Rails, to take advantage of the large number of gems, such as devise, carrierwave, paginator that are used in the app.
+The web app will be designed and built using Ruby on Rails, which uses the Model-View-Controller principle to handle the backend of the application. Our database of choice is postgresql, in which all information is stored. We chose Ruby on Rails for its simplicity to set up, whilst providing a large number of gems, such as Devise, Carrierwave, Paginator that are used in the app. On top for that, it is able to easily integrate any plugins into its asset pipeline, which we have done with Slick.
 
-We used Facebook omniauth, graph API and Koala to enable log in to facebook on our web application and users to know if any of their friends are also going for the event.
+In order to enable users to login with their facebook account, we used Facebook Omniauth, Graph API and Koala to authenticate users, and pull information from their facebook accounts such as their friends list.
+
+To allow users to upload posters for their events, we utilized Carrierwave to create a simple upload button, and Minimagick to process the images and scale them accordingly, and finally to save the images in our database.
+
+As mentioned previously, we have used Slick, along with other JavaScript plugins/gems such as Momentjs, Bootstrap and Simple Calendar, to improve our UI/UX from a basic html page. 
 
 ![loginpage.png](assets/loginpage.png)
 
