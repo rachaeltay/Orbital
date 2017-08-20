@@ -7,7 +7,7 @@ class UpdateMailer < ApplicationMailer
     if !@post.signups.nil?
       @post.signups.each do |signup| 
         @user = User.find(signup.user_id)
-        mail(to: @user.email, subject: @post.title + 'update' + @post.updates.count.to_s)
+        mail(to: @user.email, subject: @post.title + ' update ' + @post.updates.count.to_s)
       end
     end
   end
