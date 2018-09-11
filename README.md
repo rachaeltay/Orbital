@@ -1,5 +1,6 @@
 =======
 # README
+This is the first web application we have ever built and we have learnt a lot through self-learning and practising. Thanks for checking this out :)
 
 ## Project Scope
 Web app to allow users to view and create events, and save them to a planner
@@ -25,15 +26,12 @@ As mentioned previously, we have used Slick, along with other JavaScript plugins
 ![login.png](assets/login.png)
 
 - Users can create accounts and log in to manage their events, using Postgresql as the backend to manage all CRUD activities
-
 - Able to post and edit new events
-
 - Able to save events to their calendar
 
 ![social-media4.png](assets/social-media4.png)
 
 - Link / log in to Facebook, and able to access users data along with friends' list
-
 - Able to share events through many different social media links such as Telegram, Twitter, LinkedIn etc.
 
 ![comment2.png](assets/comment2.png)
