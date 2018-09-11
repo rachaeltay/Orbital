@@ -36,7 +36,8 @@ As mentioned previously, we have used Slick, along with other JavaScript plugins
 
 ![comment2.png](assets/comment2.png)
 
-- Able to see friends going to events on and join them!
+- Personalised calendar of events you have signed up
+- Able to see facebook friends going to events on event listing and calender to join them!
 
 ![calendar.png](assets/calendar.png)
 
